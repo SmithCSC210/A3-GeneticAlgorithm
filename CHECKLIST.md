@@ -40,16 +40,11 @@ _____ 4 pts: Programs compile without errors or warnings
 _____ 2 pts: Executes fully & consistently without crashing (exception/freeze)
 
 _____ 2 pt: Complies with style guidelines (missing items 1 pt each):
-
-  _____ Classes & class members all have Javadoc header comments
-
-  _____ Clear and consistent indentation of bracketed sections
-
-  _____ Adheres to Java conventions on naming & capitalization
-
-  _____ Methods & variables all have clear and accurate names
-
-  _____ Methods avoid confusing side effects
+  * Classes & class members all have Javadoc header comments
+  * Clear and consistent indentation of bracketed sections
+  * Adheres to Java conventions on naming & capitalization
+  * Methods & variables all have clear and accurate names
+  * Methods avoid confusing side effects
 
 _____ 1 pt: All required files included with submission (including completed checklist file)
 
