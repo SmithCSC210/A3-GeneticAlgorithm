@@ -53,5 +53,5 @@ _____ 2 pt: Complies with style guidelines (missing items 1 pt each):
 
 _____ 1 pt: All required files included with submission (including completed checklist file)
 
-_____ 1 pt: readme.md contains your personal reflection on the assignment and answers to any questions provided
+_____ 1 pt: readme.md contains your personal reflection on the assignment
 
