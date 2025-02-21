@@ -1,7 +1,7 @@
 ---
-Homework Assignment 2: Genetic Algorithms
+Homework Assignment 3: Genetic Algorithms
 ---
-**Due: Tuesday, September 17, midnight**
+**Due: Friday, February 28, midnight**
 
 Genetic algorithms are a class of approaches that draw loosely from the process of evolution. They allow us to optimize solutions to complex problems. This week, you will write code to implement a genetic algorithm using the class `ArrayList`. For further details, we encourage you to reference the [online javadoc](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html) for this class.
 
@@ -21,7 +21,7 @@ To determine these scores, we will use a set of rules to assign each individual 
 
 The core unit of our experiment is the individual creature. Therefore, we will make a class called `Individual` that defines an object representing a creature. The core data associated with each creature is its chromosome.
 
-Each Individual has only a single copy of a single chromosome, which consists of a sequence of letters. (For those with a biology background, these sexually reproducing single-chromosome creatures are haploid). This class should hold its chromosome in an `ArrayList<Character>`.  
+Each Individual has only a single copy of a single chromosome, which consists of a sequence of letters. (For those with a biology background, these sexually reproducing single-chromosome creatures are haploid). This class should hold its chromosome in an `ArrayList<Character>`.  You may also want to store the size of this ArrayList as an instance variable.s
 
 You will want to understand the following parameters, which are explored further in Part 5:
 * The initial chromosome size, ***c_0*** (recommended setting: 8)
@@ -43,10 +43,10 @@ Next, you want to create a second constructor that will allow you to generate of
 ### Constructor
 
 Here's how it should work:
-* Randomly select two individuals that will be parent 1 and parent 2
-* Pick a prefix of random length from the first parent 
-* Pick a suffix of random length from the second parent
-* Concatenate the prefix and the suffix to make a new chromosome
+* This method will be passed two objects of type `Individual` that will be parent 1 and parent 2
+* Pick a prefix to use from the first parent, corresponding to between 1 and `parent1.size` characters
+* Pick a suffix to use from the second parent, corresponding to between 1 and `parent2.size` characters
+* Concatenate the characters indicated by the prefix and the suffix to make a new chromosome
 * Check if the new chromosome is longer than the maximum allowed chromosome length (***c_max***)
 * If the result is longer than ***c_max***, truncate letters from the end until your chromosome length is ***c_max***
 
@@ -54,7 +54,8 @@ Example: Let's say we randomly select two creatures as Parent 1 and Parent 2. Pa
 * Randomly pick a substring starting from the beginning of Parent 1's chromosome, either A, AA, AAB, or AABB 
 * Randomly pick a substring starting from the end of Parent 2's chromosome, either D, DD, CDD, or CCDD
 
-Let's say the random number generator picks 3 (AAB) then 2 (DD).  The offspring chromosome would be AABDD. 
+Let's say the random number generator picks 3 (AAB) then 2 (DD).
+The offspring chromosome would be AABDD. 
 
 ### Mutation
 
