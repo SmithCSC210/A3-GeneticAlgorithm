@@ -9,7 +9,7 @@ public class GA_Simulation {
 
   /** Sorts population by fitness score, best first 
    * @param pop: ArrayList of Individuals in the current generation
-   * @return: ArrayList of Individuals sorted by fitness
+   * @return: Nothing. ArrayList is sorted in place
   */
     public void rankPopulation(ArrayList<Individual> pop) {
         // sort population by fitness
