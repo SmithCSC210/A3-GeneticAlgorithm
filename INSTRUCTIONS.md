@@ -123,7 +123,7 @@ For the first step, your `GA_Simulation` class will need to create the first gen
 
 ### Rank Individuals According to Fitness
 
-Next, you want to compare the fitness of all of the `Individuals` in this generation. We have provided a method called `rankPopulation` that will allow you to sort an `ArrayList` of `Individuals`. It returns an `ArrayList` that is sorted according to each `Individual`'s fitness score.
+Next, you want to compare the fitness of all of the `Individuals` in this generation. We have provided a method called `rankPopulation` that will allow you to sort an `ArrayList` of `Individuals` in place. This means that the original `ArrayList` that you pass it will be sorted (think about shallow copies). The end result is that your `ArrayList` is sorted according to each `Individual`'s fitness score.
 
 ### Evolve Your Population
 
