@@ -26,7 +26,7 @@ public class Individual {
      * @return true if a number randomly chosen between 0 and 1 is less than ***m***, else false
     */
     private Boolean doesMutate(float m){
-        float randomNum = ThreadLocalRandom.current().nextInt(0, 1);
+        float randomNum = ThreadLocalRandom.current().nextInt(0, 100)/100f;
         return randomNum < m;
     }
 
